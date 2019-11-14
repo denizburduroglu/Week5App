@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Week5App';
+  // title = 'Week5App';
+  title = false;
+  count = 0;
+  
+  toggle() {
+    this.title = !this.title;
+    this.count++;
+  }
+
+  // increment() {
+  //   this.title++;
+  // }
 }

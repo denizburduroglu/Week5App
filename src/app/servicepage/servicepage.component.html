@@ -1,0 +1,14 @@
+<h1>Service Page works!</h1>
+
+{{data | json}}
+
+<table *ngFor='let d of data;'>
+    <tr>
+        <th>Header</th>
+    </tr>
+    <tr>
+        <td>{{d[key]}}</td>
+    </tr>
+</table>
+
+<button (click)="someClick()">Some click</button>
